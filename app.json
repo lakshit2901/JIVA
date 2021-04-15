@@ -125,5 +125,6 @@
     "plan": "heroku-postgresql",
     "options": {
       "version": "1.0"
-    }]
-  }
+    }
+  }]
+    }
