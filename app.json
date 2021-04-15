@@ -114,14 +114,5 @@
    "SUDO_USERS":{
       "description": "Userid of users you want to keep in sudo",
       "value": [],
-    },
-    "addons": [
-      {
-         "options": {
-            "version": "1.0"
-         },
-         "plan": "heroku-postgresql"
-      }
-   ],
     }
-
+}
