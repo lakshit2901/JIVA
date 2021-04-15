@@ -1,3 +1,5 @@
-build:
+uild:
   docker:
-    web: Dockerfile⏎
+    worker: Dockerfile
+run:
+  worker: python3 -m ROBOT
