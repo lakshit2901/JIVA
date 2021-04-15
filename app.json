@@ -78,7 +78,7 @@
   },
   "WHITELIST_USERS": {
     "description": "List of id's (not usernames) for users which WONT be banned/kicked by the bot."
-    "value": [];
+    "value": [],
     "required": false
   },
   "DONATION_LINK": {
