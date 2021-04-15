@@ -11,8 +11,7 @@
     "python"
   ],
   "repository": "https://github.com/turquoise-giggle/JIVA/",
-  "website": "#TODO",
-  "success_url": "#TODO",
+ 
     "env": {
     "OWNER_ID": {
       "description": "Give your own USERID",
