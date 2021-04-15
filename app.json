@@ -15,10 +15,6 @@
   "website": "#TODO",
   "success_url": "#TODO",
     "env": {
-    "ENV": {
-      "description": "Setting this to ANYTHING will enable heroku.",
-      "value": "ANYTHING"
-    },
     "OWNER_ID": {
       "description": "Give your own USERID",
       "value": ""
@@ -62,28 +58,30 @@
       "description": "."
       "value": [],
     },
-    "NO_LOAD": {
-      "description": "plugins you don't wanna load"
-      "value": ""
-    },
-    "WEHBOOK": {
-    "description": "put false here"
-     "value": "false",
-  },
+     "No_LOAD": {
+         "description": "Dont load these modules cause they shit, space separation",
+         "required": false,
+         "value": "cleaner rss connection"
+     },
+      "WEBHOOK": {
+         "description": "Setting this to ANYTHING will enable webhooks. If you dont know how this works leave it as it is",
+         "required": false,
+         "value": ""
+      },
   "URL": {
     "description": "put none here"
-   "value": "none",
-    "required": false
+    "required": false,
+    "value": "none"
   },
   "SUPPORT_USERS": {
     "description": "List of id's (not usernames) for users which are allowed to gban, but can also be banned."
-    "value": [],
-    "required": false
+     "required": false,
+     "value": []
   },
   "WHITELIST_USERS": {
     "description": "List of id's (not usernames) for users which WONT be banned/kicked by the bot."
-    "value": [],
-    "required": false
+     "required": false,
+    "value": []
   },
   "DONATION_LINK": {
     "description": "EG, paypal"
@@ -105,11 +103,10 @@
     "value": "false",
     "required": false
   },
-  "STRICT_GBAN": {
-   "description": "put true or false"
-    "value": "false",
-    "required": false
-  },
+      "STRICT_GBAN": {
+         "description": "Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned.",
+         "value": "True"
+      },
   "WORKERS": {
     "description": "no. of subthread to use",
     "value": "false",
@@ -121,20 +118,13 @@
       "value": [],
       "required": false
     },
+    "addons": [
       {
-  "buildpacks": [
-    {
-      "url": "https://github.com/heroku/heroku-buildpack-pgbouncer"
-    },
-    {
-      "url": "heroku/python"
+         "options": {
+            "version": "1.0"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],
     }
-  ]
-}
-  "addons": [{
-    "plan": "heroku-postgresql",
-    "options": {
-      "version": "1.0"
-    }
-  }]
-    }
+
