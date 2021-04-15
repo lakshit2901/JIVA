@@ -27,8 +27,8 @@
     },
     "OWNER_USERNAME": {
       "description": "Give your own username",
-      "value": ""
-      "required": true
+      "required": true,
+      "value": ""  
     },
     "API_KEY": {
       "description": "Needed for inline buttons maker. Make a bot at http://telegram.dog/BotFather and get the token of your bot.Worth it. Get it.",
@@ -36,23 +36,23 @@
     },
     "HEROKU_API_KEY": {
       "description": "Required for updating the bot and other stuff get it from https://dashboard.heroku.com/account",
-      "value": "",
-      "required": false
+      "required": false,
+      "value": ""
     },
     "MESSAGE_DUMP": {
      "description": "Add group id where you want all messages get forwaded from your bot",
-      "value": "",
-      "required": false
+      "required": false,
+      "value": ""
     },
     "HEROKU_APP_NAME": {
       "description": "YOUR app name ",
-      "value": "",
-      "required": false
+      "required": false,
+      "value": ""
     },
     "SQLALCHEMY_DATABASE_URI": {
     "description": "YOUR SQL database url",
-    "value": "",
-    "required": true
+     "required": true,
+      "value": ""
     },
     "LOAD": {
       "description": "."
@@ -85,23 +85,22 @@
   },
   "DONATION_LINK": {
     "description": "EG, paypal"
-    "value": "none",
-    "required": false
+     "required": false,
+    "value": "none"
   },
   "CERT_PATH":  {
     "description": "keep it none"
-    "value": "none",
-    "required": false
+    "required": false,
+    "value": "none"
   },
   "PORT": {
     "description": "keep it as it is",
+    "required": true,
     "value": "5000"
-    "required": true
   },
   "DEL_CMDS": {
     "description": "Whether or not you should delete 'blue text must click' commands",
-    "value": "false",
-    "required": false
+    "value": "false"
   },
       "STRICT_GBAN": {
          "description": "Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned.",
@@ -110,13 +109,11 @@
   "WORKERS": {
     "description": "no. of subthread to use",
     "value": "false",
-    "required": false
   },
     
    "SUDO_USERS":{
       "description": "Userid of users you want to keep in sudo",
       "value": [],
-      "required": false
     },
     "addons": [
       {
