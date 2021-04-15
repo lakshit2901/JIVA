@@ -121,6 +121,16 @@
       "value": [],
       "required": false
     },
+      {
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-pgbouncer"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
   "addons": [{
     "plan": "heroku-postgresql",
     "options": {
