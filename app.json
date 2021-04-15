@@ -1,0 +1,133 @@
+{
+  "name": "JIVA",
+  "description": "Highly modified ad upto-dated group management telegram bot maintained by anonymous devs of mavens",
+  "logo": "https://telegra.ph/file/93e355f677d9856545a93.jpg",
+  "keywords": [
+    "telegram",
+    "TeleBot",
+    "plugin",
+    "modular",
+    "productivity",
+    "GroupManagement",
+    "python"
+  ],
+  "repository": "https://github.com/turquoise-giggle/JIVA/",
+  "website": "#TODO",
+  "success_url": "#TODO",
+  "env": {
+    "ENV": {
+      "description": "Setting this to ANYTHING will enable heroku.",
+      "value": "ANYTHING"
+    },
+    "TMP_DOWNLOAD_DIRECTORY": {
+      "description": "Where downloaded files will go.",
+      "value": "./downloads/",
+      "required": false
+    },
+    "TELETHON_ID": {
+      "description": "Get this value from my.telegram.org! Please do not steal",
+      "value": ""
+      "required": true
+    },
+    "TELETHON_HASH": {
+      "description":"Get this value from my.telegram.org! Please do not steal",
+      "value": ""
+      "required": true
+    
+    "OWNER_ID": {
+      "description": "Give your own USERID",
+      "value": ""
+      "required": true
+    },
+    "SPAMWATCH": {
+      "description": "
+    "OWNER_USERNAME": {
+      "description": "Give your own username",
+      "value": ""
+      "required": true
+    },
+ 
+    "TG_BOT_USER_NAME_BF_HER": {
+      "description": "Needed for inline buttons maker. Make a bot at http://telegram.dog/BotFather and get the username of your bot",
+      "value": ""
+    },
+    "TG_BOT_TOKEN_BF_HER": {
+      "description": "Needed for inline buttons maker. Make a bot at http://telegram.dog/BotFather and get the token of your bot.Worth it. Get it.",
+      "value": ""
+    },
+    "HEROKU_API_KEY": {
+      "description": "Required for updating the bot and other stuff get it from https://dashboard.heroku.com/account",
+      "value": "",
+      "required": false
+    },
+    "MESSAGE_DUMP": {
+     "description": "Add group id where you want all messages get forwaded from your bot",
+      "value": "",
+      "required": false
+    },
+    "HEROKU_APP_NAME": {
+      "description": "YOUR app name ",
+      "value": "",
+      "required": false
+    },
+    "DATABASE_URL": {
+    "description": "YOUR SQL database url",
+    "value": "",
+    "required": true
+      
+   "SUDO_USERS":{
+      "description": "Userid of users you want to keep in sudo",
+      "value": "",
+      "required": false
+
+  "addons": [{
+    "plan": "heroku-postgresql",
+    "options": {
+      "version": "12"
+    }
+  }],
+  "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  },{
+    "url":"https://github.com/amivin/aria2-heroku.git"
+  },{
+    "url":"https://github.com/heroku/heroku-buildpack-google-chrome"
+  },{
+    "url":"https://github.com/heroku/heroku-buildpack-chromedriver"
+  },{
+    "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
+  },{
+    "url": "https://github.com/heroku/heroku-buildpack-apt.git"
+  },{
+    "url": "https://github.com/chrismytton/heroku-buildpack-jq"
+  },{
+    "url": "heroku/python"
+  }]
+}
+        context.bot.send_message(update.message.chat_id, "Ponggg!!!!")
+    elif update.message.text.lower() == "pong":
+        context.bot.send_message(update.message.chat_id, "Pingg!!!")
+
+
+def main():
+    """main function."""
+    print("Starting Bot")
+    updater = Updater(token=TOKEN)
+    dispatcher = updater.dispatcher
+    start_handler = CommandHandler("start", start)
+    ping_pong_handler = MessageHandler(Filters.text & (~Filters.command), ping_pong)
+    dispatcher.add_handler(start_handler)
+    dispatcher.add_handler(ping_pong_handler)
+    if len(sys.argv) > 1 and sys.argv[1] == "-l":
+        print("Starting updater.")
+        updater.start_polling()
+    else:
+        updater.start_webhook(listen="0.0.0.0", port=int(PORT), url_path=TOKEN)
+        print("Starting webhook.")
+        updater.bot.setWebhook(APP_URL + TOKEN)
+    print("Bot has been started.")
+    updater.idle()
+
+
+if __name__ == "__main__":
+    main()
