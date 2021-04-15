@@ -11,7 +11,14 @@
     "python"
   ],
   "repository": "https://github.com/turquoise-giggle/JIVA/",
- 
+    "addons": [
+      {
+         "options": {
+            "version": "1.1"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],
     "env": {
     "OWNER_ID": {
       "description": "Give your own USERID",
