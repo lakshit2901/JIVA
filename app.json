@@ -61,7 +61,7 @@
     "NO_LOAD": {
       "description": "plugins you don't wanna load"
       "value": ""
-    }'
+    },
     "WEHBOOK": {
     "description": "put false here"
      "value": "false",
