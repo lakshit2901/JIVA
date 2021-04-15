@@ -17,7 +17,7 @@
     "env": {
     "OWNER_ID": {
       "description": "Give your own USERID",
-      "value": ""
+      "value": "",
       "required": true
     },
     "SPAMWATCH": {
@@ -55,8 +55,8 @@
       "value": ""
     },
     "LOAD": {
-      "description": "."
-      "value": [],
+      "description": ".",
+      "value": []
     },
      "No_LOAD": {
          "description": "Dont load these modules cause they shit, space separation",
@@ -69,27 +69,27 @@
          "value": ""
       },
   "URL": {
-    "description": "put none here"
+    "description": "put none here",
     "required": false,
     "value": "none"
   },
   "SUPPORT_USERS": {
-    "description": "List of id's (not usernames) for users which are allowed to gban, but can also be banned."
+    "description": "List of id's (not usernames) for users which are allowed to gban, but can also be banned.",
      "required": false,
      "value": []
   },
   "WHITELIST_USERS": {
-    "description": "List of id's (not usernames) for users which WONT be banned/kicked by the bot."
+    "description": "List of id's (not usernames) for users which WONT be banned/kicked by the bot.",
      "required": false,
     "value": []
   },
   "DONATION_LINK": {
-    "description": "EG, paypal"
+    "description": "EG, paypal",
      "required": false,
     "value": "none"
   },
   "CERT_PATH":  {
-    "description": "keep it none"
+    "description": "keep it none",
     "required": false,
     "value": "none"
   },
