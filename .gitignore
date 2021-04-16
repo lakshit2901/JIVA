@@ -24,6 +24,3 @@ ROBOT/modules/sql/__pycache__
 backupdb
 hourly_backupdb
 *-ROBOT.backup
-
-# Remove some configs
-ROBOT/config.py
