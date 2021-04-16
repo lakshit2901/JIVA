@@ -1,0 +1,29 @@
+*.pyc
+.idea/
+.gitconfig
+.project
+.pydevproject
+.directory
+
+
+# REMOVE THIS STUPID CACHE FILES
+JIVA/ROBOT.session
+ROBOT/__pycache__
+ROBOT/modules/__pycache__
+ROBOT/modules/helper_funcs/__pycache__
+ROBOT/modules/sql/__pycache__
+
+# Also remove this too
+.bash_history
+.bash_logout
+.bashrc
+.cloud-locale-test.skip
+.profile
+.pgpass
+.python_history
+backupdb
+hourly_backupdb
+*-ROBOT.backup
+
+# Remove some configs
+ROBOT/config.py
