@@ -8,7 +8,9 @@
  “	Highly modified telegram bot to manage your group effectively. ”  
 </p>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/turquoise-giggle/JIVA)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/turquoise-giggle/JIVA
+
+)
   
 <p align="center">
 <a href="https://app.codacy.com/project/badge/Grade/207e41000d094885a24041ffa2897d4f)](https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=turquoise-giggle/JIVA&amp;utm_campaign=Badge_Grade)" alt="Codacy Badge">
